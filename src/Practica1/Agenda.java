@@ -1,7 +1,6 @@
 package Practica1;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,9 +9,10 @@ import java.util.Scanner;
  */
 
 public class Agenda {
+
     private int any;
     private List<Pagina> pagines = new ArrayList<>();
-    private int paginaActual = 0;
+    private int paginaActual = 1;
 
     public Agenda (){
         Scanner s = new Scanner(System.in);
