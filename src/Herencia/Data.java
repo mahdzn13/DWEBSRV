@@ -13,23 +13,25 @@ public class Data {
     int mes;
     int any;
 
-
-    /*
     public String getData() {
-        return data;
+        return dia + SEPARADOR + mes + SEPARADOR + any;
     }
 
     public void setData(String data) throws Exception {
         //#2
         if (!data.contains(SEPARADOR)) throw new Exception();
-        this.data = data;
+        int[] dates = descomposaData(data);
+
+        this.dia = dates[0];
+        this.mes = dates[1];
+        this.any = dates[2];
     }
 
     public int getAny(){
-        return data != null ? descomposaData()[2] : 0;
+        return this.any;
     }
 
-    private int[] descomposaData(){
+    private int[] descomposaData(String data){
 
         String[] dataDescomposada = data.split(SEPARADOR);
         int[] dataDescomposadaInt = new int[dataDescomposada.length];
@@ -39,30 +41,6 @@ public class Data {
 
         return dataDescomposadaInt;
 
-    }*/
-
-    public int getDia() {
-        return dia;
-    }
-
-    public void setDia(int dia) {
-        this.dia = dia;
-    }
-
-    public int getMes() {
-        return mes;
-    }
-
-    public void setMes(int mes) {
-        this.mes = mes;
-    }
-
-    public int getAny() {
-        return any;
-    }
-
-    public void setAny(int any) {
-        this.any = any;
     }
 }
 
