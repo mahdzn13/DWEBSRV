@@ -2,7 +2,7 @@ package Figures;
 
 import java.awt.Color;
 
-public abstract class FiguraGeometrica {
+public abstract class FiguraGeometrica implements Cloneable{
    protected int codi=0;
    protected String nom="";
    protected Color color=Color.white;
